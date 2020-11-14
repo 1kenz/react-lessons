@@ -26,9 +26,8 @@ export const StyledHeading = styled.h1`
 `;
 
 export const StyledImage = styled.img`
-  width: 200px;
-  border-radius: 5px;
-  /* height: 100px; */
+  width: 100px;
+  height: 100px;
   margin: 20px;
 `;
 

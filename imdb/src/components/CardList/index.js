@@ -27,7 +27,7 @@ export const CardList = () => {
         movieData.map((movie) => {
           return (
             <Card
-              poster={(baseUrl, movie.poster_path)}
+              poster_path={movie.poster_path}
               title={movie.title}
               releaseDate={movie.release_date}
             />
