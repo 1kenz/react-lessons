@@ -9,31 +9,22 @@ export const StyledCardWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: "center";
-  display: inline-block;
-  margin: 5px;
+  flex-direction: column;
+  transition: 0.2s;
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0.3rem 0.3rem 0.9rem rgba(0, 0, 0, 0.1);
+  }
 `;
 
 export const StyledText = styled.p`
   color: red;
-  margin: 20px;
-`;
-
-export const StyledHeading = styled.h1`
-  color: blue;
-  font-size: 1.5rem;
-  margin: 20px;
-`;
-
-export const StyledImage = styled.img`
-  width: 200px;
-  border-radius: 5px;
-  /* height: 100px; */
-  margin: 20px;
-`;
-
-export const ReleaseDate = styled.p`
   font-size: 0.5rem;
-  color: blue;
-  margin: 20px;
+  margin: 0;
+`;
+
+export const StyledMovieImage = styled.img`
+  width: auto;
+  height: 85%;
 `;

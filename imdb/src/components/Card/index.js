@@ -1,17 +1,10 @@
-import {
-  StyledCardWrapper,
-  StyledText,
-  StyledImage,
-  ReleaseDate,
-} from "./Card.style";
-// import { Grid, Row, Col } from "react-flexbox-grid";
+import {StyledCardWrapper, StyledText, StyledMovieImage} from "./Card.style"
 
-export const Card = ({ title, poster_path, releaseDate }) => {
-  return (
-    <StyledCardWrapper>
-      <StyledImage src={poster_path} alt="Poster" />
-      <StyledText>{title}</StyledText>
-      <ReleaseDate>Release Date: {releaseDate}</ReleaseDate>
-    </StyledCardWrapper>
-  );
-};
+export const Card = ({title, imgSrc}) => {
+    return (
+        <StyledCardWrapper>
+            <StyledMovieImage src={imgSrc}/>
+            <StyledText>{title}</StyledText>
+        </StyledCardWrapper>
+    )
+}
