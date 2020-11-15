@@ -1,9 +1,10 @@
-import {useRef} from 'react';
-import {StyledSearchBox, StyledSearchInput, StyledSearchButton} from "./SearchBox.style"
+import {useRef, useContext} from 'react';
+import {MovieContext} from "../../Movie";
+import {StyledSearchBox, StyledSearchInput, StyledSearchButton} from "./SearchBox.style";
 
-export const SearchBox = ({setSearchKeyword}) => {
+export const SearchBox = () => {
     const inputRef = useRef();
-
+    const {setSearchKeyword} = useContext(MovieContext);
     return (
         <StyledSearchBox>
            <StyledSearchInput ref={inputRef} isColored={false}/>
